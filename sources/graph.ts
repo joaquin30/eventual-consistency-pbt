@@ -44,7 +44,7 @@ export class Graph {
             }
         }
     }
-    
+
     // Verifica que node y obj esten desconectados
     isDisconected(node: string, obj: string): boolean {
         if (!this.adj.has(node)) {
@@ -52,7 +52,7 @@ export class Graph {
         }
         let visited = new Set<string>()
         this.dfs2(node, visited)
-        return visited.has(obj)
+        return !visited.has(obj)
     }
 
     toJSON() {

@@ -4,7 +4,7 @@
   "description": "Using Property-Based Testing for testing eventual consistency in programs",
   "type": "module",
   "scripts": {
-    "test": "glob -c \"node --import tsx --no-warnings --test\" \"./tests/**/*.test.ts\""
+    "test": "glob -c \"node --import tsx --no-warnings --test\" \"./sources/**/*.test.ts\""
   },
   "author": "j30",
   "license": "ISC",
